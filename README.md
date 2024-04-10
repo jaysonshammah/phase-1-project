@@ -1,4 +1,4 @@
-# Dog API
+# Tiny Dog App
 
 This project is a single-page HTML/CSS/JS frontend application that accesses data from a public API providing information about various dog breeds. The API used in this project is the [Dog CEO's Dog API](https://dog.ceo/dog-api/), which does not require any authentication or API key.
 
