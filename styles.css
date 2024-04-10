@@ -21,14 +21,7 @@ body {
     overflow: hidden;
     
 }
-#dogs {
-    height: 100vh;
-    background-color: red;
-}
-#submit {
-    height: 100vh;
-    background-color:blueviolet;
-}
+
 header{
     border-bottom: 2px solid #dee2e6;
     padding: 10px 0;
