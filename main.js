@@ -2,10 +2,13 @@ const baseUrl = "https://dog.ceo/api/breeds";
 const randomImg = document.querySelector('#random');
 const rightSect = document.querySelector(`.right-section`);
 const explore = document.querySelector(`#explore`);
+const select = document.querySelector(`#breeds`);
 
 
-
-console.log(randomImg);
+function init() {
+    fetchRandomDog();
+    fetchAllDogBreeds(); 
+}
 
 function fetchRandomDog() {
     fetch(`${baseUrl}/image/random`)
@@ -22,3 +25,16 @@ function fetchRandomDog() {
 explore.addEventListener('click', fetchRandomDog);
     
 fetchRandomDog();
+fetchAllDogBreeds(); 
+
+function fetchAllDogBreeds() {
+    fetch(`${baseUrl}/list/all`)
+    .then(res =>res.json())
+    .then((data) => {
+        const breeds = Object.keys(data.message);
+
+        console.log(breeds);
+    })
+}
+
+init();
