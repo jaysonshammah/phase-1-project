@@ -1,4 +1,4 @@
-# Tiny Doggo
+# Tiny Dog App
 
 This project is a single-page HTML/CSS/JS frontend application that accesses data from a public API providing information about various dog breeds. The API used in this project is the [Dog CEO's Dog API](https://dog.ceo/dog-api/), which does not require any authentication or API key.
 
@@ -7,9 +7,8 @@ This project is a single-page HTML/CSS/JS frontend application that accesses dat
 - Asynchronously fetches data from the Dog CEO's Dog API using JSON format.
 - Displays a collection of dog breeds with images.
 - Implements interactivity through distinct event listeners:
-  1. **Search functionality**: Allows users to search for a specific dog breed by entering its name in an input field. This event is triggered by the 'input' event.
-  2. **Filter by breed group**: Enables users to filter dog breeds by their group (e.g., hound, sporting, herding) by selecting an option from a dropdown menu. This event is triggered by the 'change' event.
-  3. **Random dog button**: Provides users with a button to fetch a random dog image. This event is triggered by the 'click' event.
+ 
+  1. **Random dog button**: Provides users with a button to fetch a random dog image. This event is triggered by the 'click' event.
 
 ## Array Iteration
 
@@ -21,7 +20,17 @@ This project is a single-page HTML/CSS/JS frontend application that accesses dat
 - `styles.css`: CSS file for styling the HTML elements.
 - `script.js`: JavaScript file responsible for fetching data from the API, handling events, and updating the UI.
 
-## Setup
+
+## Credits
+
+- Dog CEO's Dog API: https://dog.ceo/dog-api/
 
 
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+Feel free to reach out if you have any questions or suggestions for improvement!
 
