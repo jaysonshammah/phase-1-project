@@ -37,6 +37,7 @@ function fetchAllDogBreeds() {
         breeds.map((breed) => {
             const option = document.createElement("option");
             option.textContent = breed;
+            option.value = breed;
 
             select.appendChild(option);
         });
