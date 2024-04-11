@@ -34,7 +34,13 @@ function fetchAllDogBreeds() {
         const breeds = Object.keys(data.message);
 
         console.log(breeds);
-    })
+        breeds.map((breed) => {
+            const option = document.createElement("option");
+            option.textContent = breed;
+
+            select.appendChild(option);
+        });
+    });
 }
 
 init();
