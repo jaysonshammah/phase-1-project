@@ -4,6 +4,7 @@ const rightSect = document.querySelector(`.right-section`);
 const explore = document.querySelector(`#explore`);
 
 
+
 console.log(randomImg);
 
 function fetchRandomDog() {
@@ -19,5 +20,5 @@ function fetchRandomDog() {
 }
 
 explore.addEventListener('click', fetchRandomDog);
-
+    
 fetchRandomDog();

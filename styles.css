@@ -18,12 +18,13 @@ body {
 
 #home {
     height:100vh;
-    overflow: hidden;
+    
     
 }
 #dogs {
-    height: 100vh;
-    background-color: red;
+    border-top: 2px solid red;
+    padding: 50px;
+    
 }
 #submit {
     height: 100vh;
@@ -39,7 +40,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 2px solid #dee2e6;
+    
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -84,7 +85,7 @@ a {
 .content {
     display: flex;
     flex-direction: column;
-    gap:10px
+    gap:10px;
     max-width: 300px;
 }
 .text{
@@ -99,6 +100,10 @@ a {
     font-size: 45px;
     font-weight: 900;
     margin: 15px 0;
+}
+.heading2 {
+    font-size: 30px;
+    padding: 5px 0;
 }
 #explore{
     cursor: pointer;
@@ -119,4 +124,11 @@ a {
     width: 100%;
     object-fit: cover;
     object-position: top;
+}
+
+.select-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
 }
