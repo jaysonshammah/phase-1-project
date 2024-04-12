@@ -43,5 +43,12 @@ function fetchAllDogBreeds() {
         });
     });
 }
-
+function fetchDogBreed(breed) {
+    fetch (`https://dog.ceo/api/breed/${breed}`)
+    .then(res => res.json())
+    .then((data) => {
+        const images = data.message;
+        console.log(images);
+  });
+}
 init();

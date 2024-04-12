@@ -133,5 +133,17 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 20px;
+    margin-top: 40px;
 }
 
+.dog-card {
+    width: 100%;
+    height: 300px;
+}
+.dog-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px;
+}
