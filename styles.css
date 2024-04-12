@@ -131,7 +131,8 @@ a {
 }
 .dogs-display {
     display: grid;
-    grid-template-columns: 300px 400px 300px 200px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
 }
 
 .boxx{
