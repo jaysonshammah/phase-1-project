@@ -45,7 +45,7 @@ function fetchAllDogBreeds() {
 
         select.addEventListener('change', (event) => {
             const selectedValue = event.target.value;
-            
+
             fetchDogBreed(selectedValue);
         });
     });
@@ -55,6 +55,8 @@ function fetchDogBreed(breed) {
     .then(res => res.json())
     .then((data) => {
         const images = data.message.slice(0, 8);
+
+        dogsDisplay.innerHTML ='';
 
         images.map((image) => {
             const dogCard = document.createElement('div');
