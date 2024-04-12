@@ -47,8 +47,16 @@ function fetchDogBreed(breed) {
     fetch (`https://dog.ceo/api/breed/${breed}`)
     .then(res => res.json())
     .then((data) => {
-        const images = data.message;
-        console.log(images);
+        const images = data.message.slice(0, 8);
+        images.map((image) => {
+            const dogCard = document.createElement('div');
+            dogCard.className = 'dog-card';
+
+            const dogImage = document.createElement('img');
+            dogImage.src = image;
+            dogCard.appendChild(dogImage);
+            
+        });
   });
 }
 init();
